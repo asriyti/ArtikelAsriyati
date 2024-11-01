@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #021f3f;
+    color: white;
+    width: 100%;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.site-title {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+
+.artikel {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    width: 90%;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.artikel-image img {
+    width: 350px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.artikel-content p {
+    font-family: 'italic';
+    color: gray;
+    font-size: 13px;
+}
+
+.artikel-content {
+    max-width: 500px;
+}
+
+.artikel-content h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.artikel-content button {
+    padding: 10px 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.artikel-content button:hover {
+    background-color: #0e074d;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px;
+        background-color: #021f3f;
+        color: white;
+        width: 100%;
+    }
+
+    .logo {
+        width: 85px;
+        height: auto;
+    }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 4px;
+        }
+                nav ul li {
+                    display: inline;
+                    margin: 3px;
+                    font-size: 15px;
+                }
+
+    .carousel-item img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
+
+
+    .artikel {
+        flex-direction: column;
+        /* Susun artikel secara vertikal */
+        align-items: center;
+        /* Rata tengah */
+    }
+
+    .artikel-image img {
+        width: 100%;
+        /* Sesuaikan gambar dengan lebar 100% */
+        height: auto;
+        /* Menjaga rasio gambar */
+    }
+
+    .artikel-content {
+        max-width: 100%;
+        /* Maksimalkan lebar konten artikel */
+    }
+
+    .artikel-content button {
+        padding: 10px 10px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+}

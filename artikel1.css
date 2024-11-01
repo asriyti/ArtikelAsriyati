@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+/* Gaya tombol Back */
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.back-button img {
+    width: 30px;
+    height: auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    /* Jarak antara tombol Back dan logo */
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px;
+    text-align: center;
+}
+
+.news-article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.article-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.article-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.article-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.column p {
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #333;
+}
+.time p{
+    color: grey;
+    font-family: italic;
+    font-size: 12px;
+}
+.share-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.share-label-icon {
+    width: 24px;
+    height: auto;
+}
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.share-icon {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.share-icon:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .article-content {
+        grid-template-columns: 1fr;
+    }
+        .logo {
+            width: 70px;
+            height: auto;
+        }
+        .share-label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 11px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    
+        .share-label-icon {
+            width: 17px;
+            height: auto;
+        }
+    
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 9px;
+            margin: 20px 0;
+        }
+    
+        .share-icon {
+            width: 20px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+    
+        .share-icon:hover {
+            transform: scale(1.1);
+        }
+        .article-title {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        .column p {
+            margin-bottom: 15px;
+            font-size: 12px;
+            color: #333;
+        }
+}
